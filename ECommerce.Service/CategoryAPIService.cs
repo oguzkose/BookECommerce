@@ -69,5 +69,33 @@ namespace ECommerce.Service
             return _context.SaveChanges();
             
         }
+
+
+        /// <summary>
+        /// Body'den gelen Id ve Name alanı DB'de ki id ve name ile eşleşirse veriyi silen metot
+        /// </summary>
+        /// <param name="categoryRequest"></param>
+        /// <returns>int</returns>
+        public int DeleteCategory(CategoryRequest categoryRequest)
+        {
+            var category = _context.Categories.FirstOrDefault(x => x.Id == categoryRequest.Id && x.Name==categoryRequest.Name);
+            _context.Remove(category);
+            return _context.SaveChanges();
+        }
+
+
+        /// <summary>
+        /// Body'den gelen Id'ye göre datayı bulup,yine body'den gelen name değeri ile DB'de ki name değerini güncelleyen metot.
+        /// </summary>
+        /// <param name="categoryRequest"></param>
+        /// <returns>int</returns>
+        public int UpdateCategory(CategoryRequest categoryRequest)
+        {
+            var categoryToBeUpdated = _context.Categories.Find(categoryRequest.Id);
+
+            categoryToBeUpdated.Name = categoryRequest.Name;
+
+            return _context.SaveChanges();           
+        }
     }
 }

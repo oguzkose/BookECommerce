@@ -38,5 +38,19 @@ namespace ECommerce.API.Controllers
         {
             return _categoryAPIService.InsertCategory(categoryRequest);
         }
+
+
+        [HttpDelete]
+        public int Delete([FromBody]CategoryRequest categoryRequest)
+        {
+            return _categoryAPIService.DeleteCategory(categoryRequest);
+        }
+
+
+        [HttpPut]
+        public int Update([FromBody]CategoryRequest categoryRequest)
+        {
+            return _categoryAPIService.UpdateCategory(categoryRequest);
+        }
     }
 }
