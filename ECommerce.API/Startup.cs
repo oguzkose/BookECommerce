@@ -33,6 +33,7 @@ namespace ECommerce.API
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddTransient<CategoryAPIService>();
+            services.AddTransient<BookAPIService>();
 
         }
 

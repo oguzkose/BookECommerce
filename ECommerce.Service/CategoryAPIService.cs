@@ -25,14 +25,15 @@ namespace ECommerce.Service
             var category = _context.Categories
                 .ToList()
                 .Select(x => new CategoryResponse
-            {
-                Id = x.Id,
-                Name = x.Name
+                {
+                    Id = x.Id,
+                    Name = x.Name
 
-            }).ToList();
+                }).ToList();
 
             return category;
         }
+
 
 
         /// <summary>
@@ -49,9 +50,10 @@ namespace ECommerce.Service
                 Id = category.Id,
                 Name = category.Name
             };
-            return result;                       
-                
+            return result;
+
         }
+
 
 
         /// <summary>
@@ -67,21 +69,23 @@ namespace ECommerce.Service
             };
             _context.Categories.Add(category);
             return _context.SaveChanges();
-            
+
         }
 
 
+
         /// <summary>
-        /// Body'den gelen Id ve Name alanı DB'de ki id ve name ile eşleşirse veriyi silen metot
+        /// Body'den gelen Id alanı DB'de ki id ile eşleşirse veriyi silen metot
         /// </summary>
         /// <param name="categoryRequest"></param>
         /// <returns>int</returns>
         public int DeleteCategory(CategoryRequest categoryRequest)
         {
-            var category = _context.Categories.FirstOrDefault(x => x.Id == categoryRequest.Id && x.Name==categoryRequest.Name);
+            var category = _context.Categories.FirstOrDefault(x => x.Id == categoryRequest.Id);
             _context.Remove(category);
             return _context.SaveChanges();
         }
+
 
 
         /// <summary>
@@ -95,7 +99,7 @@ namespace ECommerce.Service
 
             categoryToBeUpdated.Name = categoryRequest.Name;
 
-            return _context.SaveChanges();           
+            return _context.SaveChanges();
         }
     }
 }
