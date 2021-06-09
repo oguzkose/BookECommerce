@@ -1497,6 +1497,19 @@
         "runtime": {
           "bin/placeholder/ECommerce.Data.dll": {}
         }
+      },
+      "ECommerce.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ECommerce.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ECommerce.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Service.dll": {}
+        }
       }
     }
   },
@@ -5653,11 +5666,17 @@
       "type": "project",
       "path": "../ECommerce.Data/ECommerce.Data.csproj",
       "msbuildProject": "../ECommerce.Data/ECommerce.Data.csproj"
+    },
+    "ECommerce.Service/1.0.0": {
+      "type": "project",
+      "path": "../ECommerce.Service/ECommerce.Service.csproj",
+      "msbuildProject": "../ECommerce.Service/ECommerce.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "ECommerce.Data >= 1.0.0",
+      "ECommerce.Service >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.15"
     ]
@@ -5695,6 +5714,9 @@
           "projectReferences": {
             "C:\\Users\\Oğuz KÖSE\\source\\repos\\oguzkose\\BookECommerce\\ECommerce.Data\\ECommerce.Data.csproj": {
               "projectPath": "C:\\Users\\Oğuz KÖSE\\source\\repos\\oguzkose\\BookECommerce\\ECommerce.Data\\ECommerce.Data.csproj"
+            },
+            "C:\\Users\\Oğuz KÖSE\\source\\repos\\oguzkose\\BookECommerce\\ECommerce.Service\\ECommerce.Service.csproj": {
+              "projectPath": "C:\\Users\\Oğuz KÖSE\\source\\repos\\oguzkose\\BookECommerce\\ECommerce.Service\\ECommerce.Service.csproj"
             }
           }
         }

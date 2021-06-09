@@ -1,4 +1,5 @@
 using ECommerce.Data.Context;
+using ECommerce.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +32,8 @@ namespace ECommerce.API
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+            services.AddTransient<CategoryAPIService>();
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

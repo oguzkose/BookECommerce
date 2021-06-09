@@ -61,3 +61,5 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\obj\Debug
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\obj\Debug\netcoreapp3.1\ECommerce.API.pdb
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\obj\Debug\netcoreapp3.1\ECommerce.API.genruntimeconfig.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\ECommerce.Service.dll
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\ECommerce.Service.pdb
