@@ -79,9 +79,9 @@ namespace ECommerce.Service
         /// </summary>
         /// <param name="categoryRequest"></param>
         /// <returns>int</returns>
-        public int DeleteCategory(CategoryRequest categoryRequest)
+        public int DeleteCategory(int id)
         {
-            var category = _context.Categories.FirstOrDefault(x => x.Id == categoryRequest.Id);
+            var category = _context.Categories.FirstOrDefault(x => x.Id == id);
             _context.Remove(category);
             return _context.SaveChanges();
         }

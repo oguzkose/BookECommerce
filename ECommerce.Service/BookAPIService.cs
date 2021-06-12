@@ -84,16 +84,17 @@ namespace ECommerce.Service
 
 
         /// <summary>
-        /// Body'den gelen Id'ye göre kitabı silen metot
+        /// Gelen Id'ye göre kitapları silen metot
         /// </summary>
-        /// <param name="bookResponse"></param>
+        /// <param name="bookId"></param>
         /// <returns>int</returns>
-        public int DeleteBook(BookResponse bookResponse)
+        public int DeleteBook(int id)
         {
-            var book = _context.Books.FirstOrDefault(x => x.Id == bookResponse.Id);
+            var book = _context.Books.FirstOrDefault(x => x.Id == id);
             _context.Remove(book);
             return _context.SaveChanges();
         }
+        
 
 
 

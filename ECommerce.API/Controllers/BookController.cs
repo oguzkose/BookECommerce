@@ -40,11 +40,12 @@ namespace ECommerce.API.Controllers
         }
 
 
-        [HttpDelete]
-        public int Delete([FromBody] BookResponse bookResponse)
+        [HttpDelete("{id}")]
+        public int Delete(int id)
         {
-            return _bookAPIService.DeleteBook(bookResponse);
+            return _bookAPIService.DeleteBook(id);
         }
+       
 
 
         [HttpPut]

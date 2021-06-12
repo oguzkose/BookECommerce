@@ -1,42 +1,50 @@
-﻿using ECommerce.Service.Response;
+﻿using ECommerce.ClientService.Client;
+using ECommerce.Service.Response;
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.IO;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace ECommerce.UI.Client
 {
-    public class BookAPIClient
+    public class BookAPIClient :BaseClient
     {
-        private readonly HttpClient _client;
-        private readonly JsonSerializer _jsonSerializer;
-        public BookAPIClient(HttpClient client, JsonSerializer jsonSerializer)
+       
+        public BookAPIClient(HttpClient client, JsonSerializer jsonSerializer):base(client,jsonSerializer)
         {
-            _client = client;
-            _jsonSerializer = jsonSerializer;
+            
         }
-
+        /// <summary>
+        /// Bütün kitapları getiren API'yi consume eder.
+        /// </summary>
+        /// <returns>Task<List<BookResponse>></returns>
         public async Task<List<BookResponse>> GetAllBooks()
         {
             var requestMessage = new HttpRequestMessage(HttpMethod.Get, "/Book/GetAll");
 
-            var response = await _client.SendAsync(requestMessage);
+            return await GetMethodsSendAsync<List<BookResponse>>(requestMessage);
+            
+        }
 
-            response.EnsureSuccessStatusCode();
+        public async Task<BookResponse> GetByBookId(int id)
+        {
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, $"/Book/GetById/{id}");
 
-            using (var responseStream = await response.Content.ReadAsStreamAsync())
-            {
-                using (var streamReader = new StreamReader(responseStream))
-                using (var jsonTextReader = new JsonTextReader(streamReader))
-                {
-                    return _jsonSerializer.Deserialize<List<BookResponse>>(jsonTextReader);
-                }
-            }
+            return await GetMethodsSendAsync<BookResponse>(requestMessage);
+        }
 
 
+        /// <summary>
+        /// Id'ye göre kitap silen API'yi consume eder.
+        /// </summary>
+        /// <param name="bookId"></param>
+        /// <returns>Task<HttpStatusCode></returns>
+        public async Task<HttpStatusCode> DeleteBook(int id)
+        {
+            var requestMessage = new HttpRequestMessage(HttpMethod.Delete, $"/Book/Delete/{id}");
 
-
+            return await DeleteMethodsSendAsync(requestMessage);
         }
     }
 }

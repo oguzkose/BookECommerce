@@ -41,10 +41,10 @@ namespace ECommerce.API.Controllers
         }
 
 
-        [HttpDelete]
-        public int Delete([FromBody] CategoryRequest categoryRequest)
+        [HttpDelete("{id}")]
+        public int Delete(int id)
         {
-            return _categoryAPIService.DeleteCategory(categoryRequest);
+            return _categoryAPIService.DeleteCategory(id);
         }
 
 

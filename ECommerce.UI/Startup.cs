@@ -1,4 +1,5 @@
 using ECommerce.ClientService.Client;
+using ECommerce.UI.Client;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,8 +32,8 @@ namespace ECommerce.UI
             //HttpClient Configurations
             services.AddHttpClient<CategoryAPIClient>(options =>
             options.BaseAddress = new Uri(Configuration.GetValue<string>("ECommerceAPIBasePath")));
-            //services.AddHttpClient<BookAPIClient>(options =>
-            //options.BaseAddress = new Uri(Configuration.GetValue<string>("ECommerceAPIBasePath")));
+            services.AddHttpClient<BookAPIClient>(options =>
+            options.BaseAddress = new Uri(Configuration.GetValue<string>("ECommerceAPIBasePath")));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -57,8 +58,10 @@ namespace ECommerce.UI
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-            pattern: "{controller=Book}/{action=Index}/{id?}");
-            //pattern: "{controller=Category}/{action=Index}/{id?}");
+            //pattern: "{controller=Book}/{action=Index}/{id?}");
+            pattern: "{controller=Category}/{action=Index}/{id?}");
+            
+
             });
         }
     }

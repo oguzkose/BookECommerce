@@ -9,3 +9,4 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debu
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.pdb
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.genruntimeconfig.cache
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.csproj.AssemblyReference.cache

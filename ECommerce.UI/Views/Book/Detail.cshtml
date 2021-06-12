@@ -1,0 +1,29 @@
+﻿@model ECommerce.UI.Models.BookDetailModel
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+
+<div>
+    <h4>BookDetailModel</h4>
+    <hr />
+    <dl class="row">
+    </dl>
+</div>
+<div>
+    <div class="row">
+        <div class="col-md-2">@Model.Book.Id</div>
+        <div class="col-md-2">@Model.Book.Name</div>
+        <div class="col-md-2">@Model.Book.Author</div>
+        <div class="col-md-2">@Model.Book.Publisher</div>
+        <div class="col-md-2">@Model.Book.Price</div>
+        <div class="col-md-2">@Model.Book.StockCount</div>
+        <div class="col-md-2">@Model.Book.CategoryId</div>
+
+
+    </div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

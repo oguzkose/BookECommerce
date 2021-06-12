@@ -8,7 +8,6 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9">
-            @* Products *@
             <div class="row">
                 <div class="col-md-1"><strong>Id</strong></div>
                 <div class="col-md-2"><strong>Name</strong></div>
@@ -31,9 +30,10 @@
                     <div class="col-md-1">@item.CategoryId</div>
 
                     <div class="col-md-4 row">
-                        @Html.ActionLink("Düzenle", "Update", "Product", new { bookId = item.Id }, new { @class = "btn btn-info" })
+                        @Html.ActionLink("Düzenle", "Update", "Book", new { Id = item.Id }, new { @class = "btn btn-primary" })
+                        @Html.ActionLink("Sil", "Delete", "Book", new { Id = item.Id }, new { @class = "btn btn-danger" })
+                        @Html.ActionLink("Detay", "Detail", "Book", new { Id = item.Id }, new { @class = "btn btn-success" })
 
-                        @Html.ActionLink("Sil", "Delete", "Product", new { bookId = item.Id }, new { @class = "btn btn-danger" })
                     </div>
                 </div>
             }
