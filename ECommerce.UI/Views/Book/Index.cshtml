@@ -1,0 +1,42 @@
+﻿@model BookIndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Anasayfa</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            @* Products *@
+            <div class="row">
+                <div class="col-md-1"><strong>Id</strong></div>
+                <div class="col-md-2"><strong>Name</strong></div>
+                <div class="col-md-2"><strong>Author</strong></div>
+                <div class="col-md-2"><strong>Publisher</strong></div>
+                <div class="col-md-2"><strong>Price</strong></div>
+                <div class="col-md-2"><strong>StockCount</strong></div>
+                <div class="col-md-1"><strong>CategoryId</strong></div>
+
+            </div>
+            @foreach (var item in Model.Books)
+            {
+                <div class="row">
+                    <div class="col-md-1">@item.Id</div>
+                    <div class="col-md-2">@item.Name</div>
+                    <div class="col-md-2">@item.Author</div>
+                    <div class="col-md-2">@item.Publisher</div>
+                    <div class="col-md-2">@item.Price</div>
+                    <div class="col-md-2">@item.StockCount</div>
+                    <div class="col-md-1">@item.CategoryId</div>
+
+                    <div class="col-md-4 row">
+                        @Html.ActionLink("Düzenle", "Update", "Product", new { bookId = item.Id }, new { @class = "btn btn-info" })
+
+                        @Html.ActionLink("Sil", "Delete", "Product", new { bookId = item.Id }, new { @class = "btn btn-danger" })
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
