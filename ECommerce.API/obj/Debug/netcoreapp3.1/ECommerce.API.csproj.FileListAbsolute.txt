@@ -11,6 +11,7 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
@@ -46,7 +47,9 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\ECommerce.Data.dll
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\ECommerce.Service.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\ECommerce.Data.pdb
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\ECommerce.Service.pdb
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\obj\Debug\netcoreapp3.1\ECommerce.API.csproj.AssemblyReference.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\obj\Debug\netcoreapp3.1\ECommerce.API.AssemblyInfoInputs.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\obj\Debug\netcoreapp3.1\ECommerce.API.AssemblyInfo.cs
@@ -60,6 +63,3 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\obj\Debug
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\obj\Debug\netcoreapp3.1\ECommerce.API.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\obj\Debug\netcoreapp3.1\ECommerce.API.pdb
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\obj\Debug\netcoreapp3.1\ECommerce.API.genruntimeconfig.cache
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\ECommerce.Service.dll
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.API\bin\Debug\netcoreapp3.1\ECommerce.Service.pdb

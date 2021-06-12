@@ -1,4 +1,4 @@
-using ECommerce.UI.Client;
+using ECommerce.ClientService.Client;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -22,18 +22,19 @@ namespace ECommerce.UI
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
             services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddAutoMapper(typeof(Startup));
             services.AddTransient<JsonSerializer>();
-            services.AddHttpClient<BookAPIClient>(options =>
+            //HttpClient Configurations
+            services.AddHttpClient<CategoryAPIClient>(options =>
             options.BaseAddress = new Uri(Configuration.GetValue<string>("ECommerceAPIBasePath")));
+            //services.AddHttpClient<BookAPIClient>(options =>
+            //options.BaseAddress = new Uri(Configuration.GetValue<string>("ECommerceAPIBasePath")));
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -43,7 +44,6 @@ namespace ECommerce.UI
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
@@ -57,7 +57,8 @@ namespace ECommerce.UI
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Book}/{action=Index}/{id?}");
+            pattern: "{controller=Book}/{action=Index}/{id?}");
+            //pattern: "{controller=Category}/{action=Index}/{id?}");
             });
         }
     }

@@ -1,0 +1,27 @@
+﻿@model CategoryIndexModel
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            @* Products *@
+            <div class="row">
+                <div class="col-md-4"><strong>Id</strong></div>
+                <div class="col-md-4"><strong>Name</strong></div>
+
+            </div>
+            @foreach (var item in Model.Categories)
+            {
+                <div class="row">
+                    <div class="col-md-4">@item.Id</div>
+                    <div class="col-md-4">@item.Name</div>
+
+                    <div class="col-md-4 row">
+                        @Html.ActionLink("Düzenle", "Update", "Product", new { bookId = item.Id }, new { @class = "btn btn-info" })
+
+                        @Html.ActionLink("Sil", "Delete", "Product", new { bookId = item.Id }, new { @class = "btn btn-danger" })
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

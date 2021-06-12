@@ -1,12 +1,11 @@
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\bin\Debug\netcoreapp3.1\ECommerce.Data.deps.json
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\bin\Debug\netcoreapp3.1\ECommerce.Data.runtimeconfig.json
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\bin\Debug\netcoreapp3.1\ECommerce.Data.runtimeconfig.dev.json
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\bin\Debug\netcoreapp3.1\ECommerce.Data.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\bin\Debug\netcoreapp3.1\ECommerce.Data.pdb
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.csproj.AssemblyReference.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.AssemblyInfoInputs.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.AssemblyInfo.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.csproj.CoreCompileInputs.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.pdb
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\bin\Debug\netcoreapp3.1\ECommerce.Data.runtimeconfig.json
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\bin\Debug\netcoreapp3.1\ECommerce.Data.runtimeconfig.dev.json
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.Data\obj\Debug\netcoreapp3.1\ECommerce.Data.genruntimeconfig.cache
