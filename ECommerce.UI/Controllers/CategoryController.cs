@@ -18,6 +18,8 @@ namespace ECommerce.UI.Controllers
             _categoryAPIClient = categoryAPIClient;
             _mapper = mapper;
         }
+
+
         public async Task< IActionResult> Index()
         {
             var categories = await _categoryAPIClient.GetAllCategories();
@@ -27,5 +29,17 @@ namespace ECommerce.UI.Controllers
             };
             return View(model);
         }
+
+
+        public async Task<IActionResult> GetById(int id)
+        {
+            var category =await _categoryAPIClient.GetByCategoryId(id);
+            var model = new CategoryDetailModel()
+            {
+                Category = _mapper.Map<CategoryViewModel>(category)
+            };
+            return View(model);
+        }
+        
     }
 }

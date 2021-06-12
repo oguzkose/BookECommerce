@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace ECommerce.UI.Models
 {
-    public class BookIndexModel
+    public class CategoryDetailModel
     {
-        public List<BookViewModel> Books { get; set; }
-
+        public CategoryViewModel Category { get; set; }
     }
 }

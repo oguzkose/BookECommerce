@@ -1,4 +1,4 @@
-﻿using ECommerce.ClientService.Models.Response;
+﻿using ECommerce.Service.Response;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
@@ -7,34 +7,38 @@ using System.Threading.Tasks;
 
 namespace ECommerce.ClientService.Client
 {
-    public class CategoryAPIClient
+    public class CategoryAPIClient:BaseClient
     {
-        private readonly HttpClient _client;
-        private readonly JsonSerializer _jsonSerializer;
-        public CategoryAPIClient(HttpClient client,JsonSerializer jsonSerializer)
+       
+        public CategoryAPIClient(HttpClient client, JsonSerializer jsonSerializer):base(client,jsonSerializer)
         {
-            _client = client;
-            _jsonSerializer = jsonSerializer;
+           
         }
-        public async Task< List<CategoryResponse>> GetAllCategories()
+
+
+        /// <summary>
+        /// Bütün kategorileri getiren API'yi consume eder.
+        /// </summary>
+        /// <returns>Task<List<CategoryResponse>></returns>
+        public async Task<List<CategoryResponse>> GetAllCategories()
         {
             var requestMessage = new HttpRequestMessage(HttpMethod.Get, "/category/getall");
-            var response = await _client.SendAsync(requestMessage);
 
-            response.EnsureSuccessStatusCode();
-
-            using (var responseStream= await response.Content.ReadAsStreamAsync())
-            {
-                using (var streamReader = new StreamReader(responseStream))
-                using (var jsonTextReader = new JsonTextReader(streamReader))
-                {
-                    return _jsonSerializer.Deserialize<List<CategoryResponse>>(jsonTextReader);
-                }
-            }
-
-
-
-            
+            return await GetAllSendAsync<List<CategoryResponse>>(requestMessage);
         }
+
+
+        /// <summary>
+        /// Id'ye göre categoriyi getiren API'yi consume eder.  
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Task<CategoryResponse></returns>
+        public async Task<CategoryResponse> GetByCategoryId(int id)
+        {
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, $"/category/getbyid/{id}");
+
+            return await GetByIdSendAsync<CategoryResponse>(requestMessage);
+        }
+       
     }
 }

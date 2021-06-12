@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using ECommerce.ClientService.Models.Response;
+using ECommerce.Service.Response;
 using ECommerce.UI.Models;
 using System;
 using System.Collections.Generic;
