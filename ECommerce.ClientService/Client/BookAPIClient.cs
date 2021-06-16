@@ -2,7 +2,10 @@
 using ECommerce.Service.Response;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Net;
+=======
+>>>>>>> df3c8afce25b87a713b989fee67f9aca24b4298b
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -23,6 +26,7 @@ namespace ECommerce.UI.Client
         {
             var requestMessage = new HttpRequestMessage(HttpMethod.Get, "/Book/GetAll");
 
+<<<<<<< HEAD
             return await GetMethodsSendAsync<List<BookResponse>>(requestMessage);
             
         }
@@ -45,6 +49,10 @@ namespace ECommerce.UI.Client
             var requestMessage = new HttpRequestMessage(HttpMethod.Delete, $"/Book/Delete/{id}");
 
             return await DeleteMethodsSendAsync(requestMessage);
+=======
+            return await GetAllSendAsync<List<BookResponse>>(requestMessage);
+            
+>>>>>>> df3c8afce25b87a713b989fee67f9aca24b4298b
         }
     }
 }

@@ -429,5 +429,9 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.pdb
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Detail.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Book\Detail.cshtml.g.cs
+=======
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\GetById.cshtml.g.cs
+>>>>>>> df3c8afce25b87a713b989fee67f9aca24b4298b
