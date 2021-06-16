@@ -5,10 +5,10 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\bin\Debug\netcoreapp3.1\ECommerce.Service.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\bin\Debug\netcoreapp3.1\ECommerce.Service.pdb
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\bin\Debug\netcoreapp3.1\ECommerce.Data.pdb
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\obj\Debug\netcoreapp3.1\ECommerce.ClientService.csproj.AssemblyReference.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\obj\Debug\netcoreapp3.1\ECommerce.ClientService.AssemblyInfoInputs.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\obj\Debug\netcoreapp3.1\ECommerce.ClientService.AssemblyInfo.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\obj\Debug\netcoreapp3.1\ECommerce.ClientService.csproj.CoreCompileInputs.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\obj\Debug\netcoreapp3.1\ECommerce.ClientService.csproj.CopyComplete
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\obj\Debug\netcoreapp3.1\ECommerce.ClientService.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\obj\Debug\netcoreapp3.1\ECommerce.ClientService.pdb
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.ClientService\obj\Debug\netcoreapp3.1\ECommerce.ClientService.csproj.AssemblyReference.cache

@@ -17,17 +17,13 @@ namespace ECommerce.UI.Controllers
             _mapper = mapper;
             _bookAPIClient = bookAPIClient;
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> df3c8afce25b87a713b989fee67f9aca24b4298b
         public async Task<IActionResult> Index()
         {
             var books = await _bookAPIClient.GetAllBooks();
 
             var model = new BookIndexModel()
             {
-<<<<<<< HEAD
                 Books = _mapper.Map<List<BookViewModel>>(books)
 
             };
@@ -46,11 +42,7 @@ namespace ECommerce.UI.Controllers
 
             var model = new BookDetailModel
             {
-                Book = _mapper.Map<BookViewModel>(book)
-=======
-                Books=_mapper.Map<List<BookViewModel>>(books)
-            
->>>>>>> df3c8afce25b87a713b989fee67f9aca24b4298b
+                Book = _mapper.Map<BookViewModel>(book)                
             };
 
             return View(model);

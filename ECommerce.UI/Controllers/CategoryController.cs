@@ -18,10 +18,8 @@ namespace ECommerce.UI.Controllers
             _mapper = mapper;
         }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> df3c8afce25b87a713b989fee67f9aca24b4298b
+
         public async Task< IActionResult> Index()
         {
             var categories = await _categoryAPIClient.GetAllCategories();
@@ -32,7 +30,6 @@ namespace ECommerce.UI.Controllers
             return View(model);
         }
 
-<<<<<<< HEAD
         public async Task<IActionResult> Delete(int id)
         {
             var category = await _categoryAPIClient.DeleteCategory(id);
@@ -40,12 +37,8 @@ namespace ECommerce.UI.Controllers
         }
 
         public async Task<IActionResult> Detail(int id)
-=======
-
-        public async Task<IActionResult> GetById(int id)
->>>>>>> df3c8afce25b87a713b989fee67f9aca24b4298b
         {
-            var category =await _categoryAPIClient.GetByCategoryId(id);
+            var category = await _categoryAPIClient.GetByCategoryId(id);
             var model = new CategoryDetailModel()
             {
                 Category = _mapper.Map<CategoryViewModel>(category)

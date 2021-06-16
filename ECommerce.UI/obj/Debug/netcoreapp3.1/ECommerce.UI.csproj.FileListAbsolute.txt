@@ -1,11 +1,3 @@
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.csproj.AssemblyReference.cache
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.AssemblyInfoInputs.cache
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.AssemblyInfo.cs
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.csproj.CoreCompileInputs.cache
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.RazorAssemblyInfo.cache
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.RazorAssemblyInfo.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\ECommerce.UI.exe
@@ -407,13 +399,24 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\ECommerce.ClientService.pdb
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\ECommerce.Service.pdb
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\ECommerce.Data.pdb
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.csproj.AssemblyReference.cache
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.AssemblyInfoInputs.cache
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.AssemblyInfo.cs
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.csproj.CoreCompileInputs.cache
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.RazorAssemblyInfo.cache
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.RazorAssemblyInfo.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.UI.StaticWebAssets.Manifest.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.UI.StaticWebAssets.xml
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\scopedcss\bundle\ECommerce.UI.styles.css
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.TagHelpers.input.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.TagHelpers.output.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.RazorCoreGenerate.cache
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Book\Detail.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Book\Index.cshtml.g.cs
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Detail.cshtml.g.cs
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\GetById.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
@@ -429,9 +432,3 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.pdb
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.genruntimeconfig.cache
-<<<<<<< HEAD
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Detail.cshtml.g.cs
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Book\Detail.cshtml.g.cs
-=======
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\GetById.cshtml.g.cs
->>>>>>> df3c8afce25b87a713b989fee67f9aca24b4298b

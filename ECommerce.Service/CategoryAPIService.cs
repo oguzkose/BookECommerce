@@ -16,6 +16,7 @@ namespace ECommerce.Service
         {
             _context = context;
         }
+
         /// <summary>
         /// Tüm kategorileri getiren metot
         /// </summary>
@@ -33,7 +34,6 @@ namespace ECommerce.Service
 
             return category;
         }
-
 
 
         /// <summary>
