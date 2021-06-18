@@ -1,19 +1,22 @@
-﻿using ECommerce.Service.Response;
+﻿using ECommerce.Service.Request;
+using ECommerce.Service.Response;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace ECommerce.ClientService.Client
 {
-    public class CategoryAPIClient:BaseClient
+    public class CategoryAPIClient : BaseClient
     {
-       
-        public CategoryAPIClient(HttpClient client, JsonSerializer jsonSerializer):base(client,jsonSerializer)
+
+        public CategoryAPIClient(HttpClient client, JsonSerializer jsonSerializer) : base(client, jsonSerializer)
         {
-           
+
         }
 
 
@@ -29,7 +32,6 @@ namespace ECommerce.ClientService.Client
         }
 
 
-
         /// <summary>
         /// Id'ye göre kategoriyi getiren API'yi consume eder.  
         /// </summary>
@@ -43,22 +45,35 @@ namespace ECommerce.ClientService.Client
 
         }
 
-    /// <summary>
-    /// Id'ye göre kategoriyi silen API'yi consume eder.
-    /// </summary>
-    /// <param name="categoryId"></param>
-    /// <returns></returns>
-    public async Task<HttpStatusCode> DeleteCategory(int id)
-    {
-        var requestMessage = new HttpRequestMessage(HttpMethod.Delete, $"/Category/Delete/{id}");
-        return await DeleteMethodsSendAsync(requestMessage);
-    }
+
         /// <summary>
-        /// Id'ye göre categoriyi getiren API'yi consume eder.  
+        /// Id'ye göre kategoriyi silen API'yi consume eder.
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns>Task<CategoryResponse></returns>
-     
-       
+        /// <param name="categoryId"></param>
+        /// <returns></returns>
+        public async Task<HttpStatusCode> DeleteCategory(int id)
+        {
+            var requestMessage = new HttpRequestMessage(HttpMethod.Delete, $"/Category/Delete/{id}");
+            return await DeleteMethodsSendAsync(requestMessage);
+        }
+
+
+        /// <summary>
+        /// KAtegoriyi güncelleyen API'yi consume eder.
+        /// </summary>
+        /// <param name="categoryRequest"></param>
+        /// <returns></returns>
+        public async Task<HttpStatusCode> UpdateCategory(CategoryRequest categoryRequest)
+        {
+            var requestMessage = new HttpRequestMessage(HttpMethod.Put, "/Category/Update");
+
+            var content = JsonConvert.SerializeObject(categoryRequest);
+
+            requestMessage.Content = new StringContent(content, Encoding.UTF8, "application/json");
+
+            return await PutMethodsSendAsync<HttpStatusCode>(requestMessage);
+
+
+        }
     }
 }

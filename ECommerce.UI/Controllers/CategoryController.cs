@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using ECommerce.ClientService.Client;
+using ECommerce.Service.Request;
+using ECommerce.Service.Response;
 using ECommerce.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -20,7 +22,7 @@ namespace ECommerce.UI.Controllers
 
 
 
-        public async Task< IActionResult> Index()
+        public async Task<IActionResult> Index()
         {
             var categories = await _categoryAPIClient.GetAllCategories();
             var model = new CategoryIndexModel()
@@ -45,6 +47,26 @@ namespace ECommerce.UI.Controllers
             };
             return View(model);
         }
-        
+
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            var category =await _categoryAPIClient.GetByCategoryId(id);
+
+            var model = _mapper.Map<CategoryViewModel>(category);
+
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(CategoryViewModel categoryViewModel)
+        {
+            var categoryRequest = _mapper.Map<CategoryRequest>(categoryViewModel);
+
+            await _categoryAPIClient.UpdateCategory(categoryRequest);
+
+            return RedirectToAction("Index", "Category");
+        }
+
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ECommerce.Service.Request;
 using ECommerce.UI.Client;
 using ECommerce.UI.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -46,6 +47,44 @@ namespace ECommerce.UI.Controllers
             };
 
             return View(model);
+        }
+
+        public async Task< IActionResult> Update(int id)
+        {
+            var book = await _bookAPIClient.GetByBookId(id);
+
+            //var model = _mapper.Map<BookViewModel>(book);
+            var model = new BookViewModel()
+            {
+                Id = book.Id,
+                Author = book.Author,
+                CategoryId = book.CategoryId,
+                Name = book.Name,
+                Price = book.Price,
+                Publisher = book.Publisher,
+                StockCount = book.StockCount
+
+            };
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(BookViewModel bookViewModel)
+        {
+            //var bookRequest = _mapper.Map<BookRequest>(bookViewModel);
+            var bookRequest = new BookRequest()
+            {
+                Id = bookViewModel.Id,
+                Author = bookViewModel.Author,
+                CategoryId = bookViewModel.CategoryId,
+                Name = bookViewModel.Name,
+                Price = bookViewModel.Price,
+                Publisher = bookViewModel.Publisher,
+                StockCount = bookViewModel.StockCount
+            };
+
+            await _bookAPIClient.UpdateBook(bookRequest);
+
+            return RedirectToAction("Index", "Book");
         }
     }
 }

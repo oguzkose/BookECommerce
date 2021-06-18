@@ -291,6 +291,7 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
@@ -415,9 +416,10 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\ECommerce.UI.RazorCoreGenerate.cache
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Book\Detail.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Book\Index.cshtml.g.cs
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Book\Update.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Detail.cshtml.g.cs
-C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\GetById.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Update.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs

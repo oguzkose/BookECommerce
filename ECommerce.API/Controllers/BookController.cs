@@ -46,8 +46,6 @@ namespace ECommerce.API.Controllers
             return _bookAPIService.DeleteBook(id);
         }
        
-
-
         [HttpPut]
         public int Update([FromBody] BookResponse bookResponse)
         {

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ECommerce.Data.Entities
+namespace ECommerce.Service.Request
 {
-    public class Book
+    public class BookRequest
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -13,6 +13,5 @@ namespace ECommerce.Data.Entities
         public double Price { get; set; }
         public int StockCount { get; set; }
         public int CategoryId { get; set; }
-        public Category Caategory { get; set; }
     }
 }

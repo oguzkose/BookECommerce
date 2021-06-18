@@ -11,7 +11,7 @@ namespace ECommerce.UI.Models
         public string Name { get; set; }
         public string Author { get; set; }
         public string Publisher { get; set; }
-        public decimal Price { get; set; }
+        public double Price { get; set; }
         public int StockCount { get; set; }
         public int CategoryId { get; set; }
     }
