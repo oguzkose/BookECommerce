@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ECommerce.Service.Request;
 using ECommerce.Service.Response;
 using ECommerce.UI.Models;
 using System;
@@ -13,6 +14,9 @@ namespace ECommerce.UI.MappingProfile
         public CategoryMapping()
         {
             CreateMap<CategoryResponse, CategoryViewModel>();
+            CreateMap<CategoryViewModel, CategoryResponse>();
+
+            CreateMap<CategoryViewModel, CategoryRequest>();
         }
     }
 }

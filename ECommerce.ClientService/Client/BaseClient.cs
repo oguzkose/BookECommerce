@@ -20,9 +20,7 @@ namespace ECommerce.ClientService.Client
             _jsonSerializer = jsonSerializer;
         }
 
-        public async Task<TResponseType> GetMethodsSendAsync<TResponseType>(HttpRequestMessage requestMessage)
-        
-
+        public async Task<TResponseType> GetMethodsSendAsync<TResponseType>(HttpRequestMessage requestMessage)       
         {
             var response = await _client.SendAsync(requestMessage);
 
@@ -44,5 +42,22 @@ namespace ECommerce.ClientService.Client
             return response.StatusCode;
         
         }
+        public async Task<TResponseType> PutMethodsSendAsync<TResponseType>(HttpRequestMessage requestMessage)
+        {
+            var response = await _client.SendAsync(requestMessage);
+
+            response.EnsureSuccessStatusCode();
+
+            using (var responseStream = await response.Content.ReadAsStreamAsync())
+            {
+                using (var streamReader = new StreamReader(responseStream))
+                using (var jsonTextReader = new JsonTextReader(streamReader))
+                {
+                    return _jsonSerializer.Deserialize<TResponseType>(jsonTextReader);
+                }
+            }
+        }
+
+
     }
 }
