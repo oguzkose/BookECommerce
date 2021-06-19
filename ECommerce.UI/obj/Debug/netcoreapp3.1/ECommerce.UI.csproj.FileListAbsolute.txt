@@ -418,8 +418,16 @@ C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Book\Index.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Book\Update.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Detail.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Update.cshtml.g.cs
+=======
+<<<<<<< HEAD
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Update.cshtml.g.cs
+=======
+>>>>>>> cbc8ac95ee5ca15314468544090c789223694112
+>>>>>>> 81530d175057735a8b23039e0c7e29866ed10746
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Oğuz KÖSE\source\repos\oguzkose\BookECommerce\ECommerce.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
