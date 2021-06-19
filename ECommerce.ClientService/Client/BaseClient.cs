@@ -58,7 +58,22 @@ namespace ECommerce.ClientService.Client
                 }
             }
         }
-        
+        public async Task<TResponseType> PostMethodsSendAsync<TResponseType>(HttpRequestMessage requestMessage)
+        {
+            var response = await _client.SendAsync(requestMessage);
+
+            response.EnsureSuccessStatusCode();
+
+            using (var responseStream = await response.Content.ReadAsStreamAsync())
+            {
+                using (var streamReader = new StreamReader(responseStream))
+                using (var jsonTextReader = new JsonTextReader(streamReader))
+                {
+                    return _jsonSerializer.Deserialize<TResponseType>(jsonTextReader);
+                }
+            }
+        }
+
 
 
     }

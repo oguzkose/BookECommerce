@@ -75,5 +75,16 @@ namespace ECommerce.ClientService.Client
 
 
         }
+
+        public async Task<HttpStatusCode> InsertCategory(CategoryRequest categoryRequest)
+        {
+            var requestMessage = new HttpRequestMessage(HttpMethod.Post, "/Category/Insert");
+
+            var content = JsonConvert.SerializeObject(categoryRequest);
+
+            requestMessage.Content = new StringContent(content, Encoding.UTF8, "application/json");
+
+            return await PostMethodsSendAsync<HttpStatusCode>(requestMessage);
+        }
     }
 }

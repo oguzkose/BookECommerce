@@ -67,6 +67,20 @@ namespace ECommerce.UI.Controllers
             return RedirectToAction("Index", "Category");
         }
 
+        public IActionResult Insert()
+        {
+            var model = new CategoryViewModel();
 
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Insert(CategoryViewModel categoryViewModel)
+        {
+            var categoryRequest = _mapper.Map<CategoryRequest>(categoryViewModel);
+
+            await _categoryAPIClient.InsertCategory(categoryRequest);
+
+            return RedirectToAction("Index", "Category");
+        }
     }
 }
