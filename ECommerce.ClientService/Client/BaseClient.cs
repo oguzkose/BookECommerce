@@ -42,7 +42,10 @@ namespace ECommerce.ClientService.Client
             return response.StatusCode;
         
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> cbc8ac95ee5ca15314468544090c789223694112
         public async Task<TResponseType> PutMethodsSendAsync<TResponseType>(HttpRequestMessage requestMessage)
         {
             var response = await _client.SendAsync(requestMessage);
@@ -58,7 +61,10 @@ namespace ECommerce.ClientService.Client
                 }
             }
         }
+<<<<<<< HEAD
         
+=======
+>>>>>>> cbc8ac95ee5ca15314468544090c789223694112
 
 
     }
