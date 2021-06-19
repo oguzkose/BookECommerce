@@ -42,14 +42,7 @@ namespace ECommerce.ClientService.Client
             return response.StatusCode;
         
         }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> cbc8ac95ee5ca15314468544090c789223694112
->>>>>>> 81530d175057735a8b23039e0c7e29866ed10746
         public async Task<TResponseType> PutMethodsSendAsync<TResponseType>(HttpRequestMessage requestMessage)
         {
             var response = await _client.SendAsync(requestMessage);
@@ -65,7 +58,6 @@ namespace ECommerce.ClientService.Client
                 }
             }
         }
-<<<<<<< HEAD
         public async Task<TResponseType> PostMethodsSendAsync<TResponseType>(HttpRequestMessage requestMessage)
         {
             var response = await _client.SendAsync(requestMessage);
@@ -82,12 +74,7 @@ namespace ECommerce.ClientService.Client
             }
         }
 
-=======
-<<<<<<< HEAD
-        
-=======
->>>>>>> cbc8ac95ee5ca15314468544090c789223694112
->>>>>>> 81530d175057735a8b23039e0c7e29866ed10746
+
 
 
     }
