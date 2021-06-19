@@ -1,5 +1,6 @@
 ﻿using ECommerce.Data.Context;
 using ECommerce.Data.Entities;
+using ECommerce.Service.Request;
 using ECommerce.Service.Response;
 using System;
 using System.Collections.Generic;
@@ -20,16 +21,16 @@ namespace ECommerce.Service
         /// </summary>
         /// <param name="bookResponse"></param>
         /// <returns>int</returns>
-        public int InsertBook(BookResponse bookResponse)
+        public int InsertBook(BookRequest bookRequest)
         {
             var book = new Book
             {
-                Author = bookResponse.Author,
-                CategoryId = bookResponse.CategoryId,
-                Name = bookResponse.Name,
-                Price = bookResponse.Price,
-                Publisher = bookResponse.Publisher,
-                StockCount = bookResponse.StockCount
+                Author = bookRequest.Author,
+                CategoryId = bookRequest.CategoryId,
+                Name = bookRequest.Name,
+                Price = bookRequest.Price,
+                Publisher = bookRequest.Publisher,
+                StockCount = bookRequest.StockCount
             };
             _context.Add(book);
 

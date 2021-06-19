@@ -86,5 +86,20 @@ namespace ECommerce.UI.Controllers
 
             return RedirectToAction("Index", "Book");
         }
+
+        public IActionResult Insert()
+        {
+            var model = new BookViewModel();
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Insert(BookViewModel bookViewModel)
+        {
+            var bookRequest = _mapper.Map<BookRequest>(bookViewModel);
+
+            await _bookAPIClient.InsertBook(bookRequest);
+
+            return RedirectToAction("Index", "Book");
+        }
     }
 }

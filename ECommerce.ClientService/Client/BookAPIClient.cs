@@ -70,5 +70,16 @@ namespace ECommerce.UI.Client
 
             return await PutMethodsSendAsync<HttpStatusCode>(requestMessage);
         }
+
+        public async Task<HttpStatusCode> InsertBook(BookRequest bookRequest)
+        {
+            var requestMessage = new HttpRequestMessage(HttpMethod.Post, "/Book/Insert");
+
+            var content = JsonConvert.SerializeObject(bookRequest);
+
+            requestMessage.Content = new StringContent(content, Encoding.UTF8, "application/json");
+
+            return await PostMethodsSendAsync<HttpStatusCode>(requestMessage);
+        }
     }
 }

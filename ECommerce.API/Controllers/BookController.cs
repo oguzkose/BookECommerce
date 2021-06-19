@@ -1,4 +1,5 @@
 ﻿using ECommerce.Service;
+using ECommerce.Service.Request;
 using ECommerce.Service.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,9 +21,9 @@ namespace ECommerce.API.Controllers
         }
 
         [HttpPost]
-        public int Insert([FromBody] BookResponse bookResponse)
+        public int Insert([FromBody] BookRequest bookRequest)
         {
-            return _bookAPIService.InsertBook(bookResponse);
+            return _bookAPIService.InsertBook(bookRequest);
         }
 
 
